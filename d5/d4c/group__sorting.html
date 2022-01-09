@@ -127,7 +127,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeccaf61ff47279384d1dba8d869d5c2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4c/group__sorting.html#gaeccaf61ff47279384d1dba8d869d5c2f">show_data</a> (int *arr, long len)</td></tr>
 <tr class="memdesc:gaeccaf61ff47279384d1dba8d869d5c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to print array values.  <a href="../../d5/d4c/group__sorting.html#gaeccaf61ff47279384d1dba8d869d5c2f">More...</a><br /></td></tr>
 <tr class="separator:gaeccaf61ff47279384d1dba8d869d5c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5bc16eaf3ffe6a6ab66780dd445904c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4c/group__sorting.html#ga5bc16eaf3ffe6a6ab66780dd445904c0">shell_sort</a> (int *array, long LEN)</td></tr>
+<tr class="memitem:ga5bc16eaf3ffe6a6ab66780dd445904c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4c/group__sorting.html#ga5bc16eaf3ffe6a6ab66780dd445904c0">shell_sort</a> (int *array, long <a class="el" href="../../df/d27/alaw_8c.html#a05b49c662c073f89e86804f7856622a0">LEN</a>)</td></tr>
 <tr class="memdesc:ga5bc16eaf3ffe6a6ab66780dd445904c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shell sort algorithm.  <a href="../../d5/d4c/group__sorting.html#ga5bc16eaf3ffe6a6ab66780dd445904c0">More...</a><br /></td></tr>
 <tr class="separator:ga5bc16eaf3ffe6a6ab66780dd445904c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -338,7 +338,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">for</span> (c = l; c &lt; r - l + 1; c++) a[c] = b[c];</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">for</span> (c = l; c &lt; r + 1; c++) a[c] = b[c];</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_define" href="../../d2/ddd/malloc__dbg_8h.html#a9cc854374299a1dd933bf62029761768">free</a>(b);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
@@ -415,7 +415,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_gab99b8a397bdd0bf2903d66c22ba4ba43_cgraph.svg" width="208" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_gab99b8a397bdd0bf2903d66c22ba4ba43_cgraph.svg" width="204" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -478,7 +478,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_ga98666b73777e308fb06a3c489ce25359_cgraph.svg" width="168" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_ga98666b73777e308fb06a3c489ce25359_cgraph.svg" width="166" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -527,7 +527,7 @@ Optimized algorithm - takes half the time as other </p><dl class="params"><dt>Pa
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">for</span> (g = 0; g &lt; gap_len; g++)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {  <span class="comment">// for each gap</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">int</span> gap = gaps[g];</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">for</span> (i = gap; i &lt; LEN; i++)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">for</span> (i = gap; i &lt; <a class="code hl_define" href="../../df/d27/alaw_8c.html#a05b49c662c073f89e86804f7856622a0">LEN</a>; i++)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        {  <span class="comment">// from gap position to the end</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordtype">int</span> tmp = array[i];</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
@@ -537,9 +537,10 @@ Optimized algorithm - takes half the time as other </p><dl class="params"><dt>Pa
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">for</span> (i = 0; i &lt; LEN; i++) printf(<span class="stringliteral">&quot;%s\t&quot;</span>, <a class="code hl_struct" href="../../df/dea/structdata.html">data</a>[i]);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_define" href="../../df/d27/alaw_8c.html#a05b49c662c073f89e86804f7856622a0">LEN</a>; i++) printf(<span class="stringliteral">&quot;%s\t&quot;</span>, <a class="code hl_struct" href="../../df/dea/structdata.html">data</a>[i]);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aalaw_8c_html_a05b49c662c073f89e86804f7856622a0"><div class="ttname"><a href="../../df/d27/alaw_8c.html#a05b49c662c073f89e86804f7856622a0">LEN</a></div><div class="ttdeci">#define LEN</div><div class="ttdoc">Linear input code | Compressed code | Linear output code ---------------—+--------------—+-----------...</div><div class="ttdef"><b>Definition:</b> alaw.c:28</div></div>
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="../../df/dea/structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> prime_factoriziation.c:25</div></div>
 </div><!-- fragment -->
 </div>
