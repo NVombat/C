@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C", "index.html", [
     [ "The Algorithms - C", "index.html", [
-      [ "Overview", "index.html#autotoc_md68", null ],
-      [ "Features", "index.html#autotoc_md69", null ],
-      [ "Documentation", "index.html#autotoc_md70", null ],
-      [ "Contributions", "index.html#autotoc_md71", null ]
+      [ "Overview", "index.html#autotoc_md69", null ],
+      [ "Features", "index.html#autotoc_md70", null ],
+      [ "Documentation", "index.html#autotoc_md71", null ],
+      [ "Contributions", "index.html#autotoc_md72", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md1", null ],
@@ -128,9 +128,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d4/d99/ode__semi__implicit__euler_8c.html#a8caee977b26888d34040b122e0e28e3a",
-"d9/dcc/prim_8c.html#abf9e6b7e6f15df4b525a2e7705ba3089",
-"dd/d8c/adaline__learning_8c.html#a3c04138a5bfe5d72780bb7e82a18e627"
+"d4/d99/fibonacci__fast_8c.html#a7a3d55bd19854075cba2eed6b63cb2d3",
+"d9/d8b/structmat__3x3__.html#ac74f33a2e1ad1f6db74d94807cf1f64e",
+"dd/d8b/problem__22_2sol1_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
